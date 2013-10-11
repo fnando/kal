@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version       = Kal::VERSION
   spec.authors       = ["Nando Vieira"]
   spec.email         = ["fnando.vieira@gmail.com"]
-  spec.description   = %[A simple HTML calendar for Rails]
+  spec.description   = %[A simple calendar for Rails]
   spec.summary       = spec.description
   spec.homepage      = "https://github.com/fnando/kal"
   spec.license       = "MIT"
@@ -13,4 +13,8 @@ Gem::Specification.new do |spec|
   spec.files         = Dir["LICENSE.txt", "README.md", "lib/**/*"]
   spec.test_files    = Dir["spec/**/*"]
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "activesupport"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "pry-meta"
 end
